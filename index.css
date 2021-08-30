@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
+.block {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 2px solid black;
+    }
+.square {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    background-color: red;
+    position: absolute;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 150px; border-radius: 50%; background: cornflowerblue;}
+    50%  {top: 150px; left: 150px; border-radius: 0%; background: yellow;}
+    75%  {top: 150px; left: 0px; border-radius: 50%; background: fuchsia;}
+    100% {top: 0px; left: 0px; background: red;}
+}
